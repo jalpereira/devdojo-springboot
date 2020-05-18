@@ -1,7 +1,7 @@
-package br.com.devdojo.awesome.endpoint;
+package br.com.devdojo.demo.endpoint;
 
-import br.com.devdojo.awesome.model.Student;
-import br.com.devdojo.awesome.util.DateUtil;
+import br.com.devdojo.demo.model.Student;
+import br.com.devdojo.demo.util.DateUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
