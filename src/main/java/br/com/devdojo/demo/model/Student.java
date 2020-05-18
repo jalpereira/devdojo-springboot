@@ -7,7 +7,7 @@ import java.util.Objects;
 import static java.util.Arrays.asList;
 
 /**
- * @author: Jose Augusto for DevDojo SpringBoot Course on 5/18/20
+ * author: Jose Augusto for DevDojo SpringBoot Course on 5/18/20
  */
 
 public class Student {

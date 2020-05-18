@@ -18,12 +18,12 @@ public class StudentEndpoint {
     @Autowired
     private DateUtil dateUtil;
 
-    @RequestMapping(method = RequestMethod.GET)
+    @GetMapping
     public ResponseEntity<?> listAll() {
         return new ResponseEntity<>(Student.studentList, HttpStatus.OK);
     }
 
-    @RequestMapping(method = RequestMethod.GET, path = "/{id}")
+    @GetMapping(path = "/{id}")
     public ResponseEntity<?> getStudentById(@PathVariable("id") int id) {
         Student student = new Student();
         student.setId(id);
@@ -33,9 +33,23 @@ public class StudentEndpoint {
         return new ResponseEntity<>(Student.studentList.get(index), HttpStatus.OK);
     }
 
-    @RequestMapping(method = RequestMethod.POST)
+    @PostMapping
     public ResponseEntity<?> save(@RequestBody Student student) {
         Student.studentList.add(student);
         return new ResponseEntity<>(student, HttpStatus.OK);
     }
+
+    @DeleteMapping
+    public ResponseEntity<?> delete(@RequestBody Student student) {
+        Student.studentList.remove(student);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    @PutMapping
+    public ResponseEntity<?> udpate(@RequestBody Student student) {
+        Student.studentList.remove(student);
+        Student.studentList.add(student);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
 }

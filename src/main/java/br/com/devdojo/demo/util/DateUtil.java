@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 /**
- * @author: Jose Augusto for DevDojo SpringBoot Course on 5/18/20
+ * author: Jose Augusto for DevDojo SpringBoot Course on 5/18/20
  */
 
 @Component
