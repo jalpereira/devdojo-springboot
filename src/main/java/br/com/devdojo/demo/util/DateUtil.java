@@ -5,6 +5,10 @@ import org.springframework.stereotype.Component;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+/**
+ * @author: Jose Augusto for DevDojo SpringBoot Course on 5/18/20
+ */
+
 @Component
 public class DateUtil {
     public String formatLocalDateTimetoDatabaseStyle(LocalDateTime localDateTime) {
